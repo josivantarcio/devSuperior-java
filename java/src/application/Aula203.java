@@ -24,7 +24,6 @@ public class Aula203 {
 
 		} catch (IOException e) {
 			System.err.println(e.getMessage());
-
 		}
 	}
 }
