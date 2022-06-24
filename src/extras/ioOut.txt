@@ -1,0 +1,1 @@
+Saudações!! testando a saída de texto para o arquivo .txt
