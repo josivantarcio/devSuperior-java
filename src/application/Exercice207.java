@@ -21,7 +21,7 @@ public class Exercice207 {
 			String nomeProd = scan.next().toUpperCase();
 			System.out.print("Quantidade: ");
 			int quantProd = scan.nextInt();
-			System.out.print("Valor:");
+			System.out.print("Valor: ");
 			double valorProd = scan.nextDouble();
 			scan.nextLine();
 			arquivoDB(nomeProd, quantProd, valorProd);
@@ -38,9 +38,9 @@ public class Exercice207 {
 	// fazer arquivoDB
 	static void arquivoDB(String prod, int quant, double valor) {
 
-		String pathArquivoDB = "/home/josevan/workspace/Lab-NelioAlves/ws-java/src/extras";
+		String pathArquivoDB = "/home/josevan/workspace/Lab-NelioAlves/ws-java/src/extras/";
 		File file = new File(pathArquivoDB);
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter("/arquivoDB.txt", true))) {
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter("arquivoDB.txt", true))) {
 			bw.write(prod + "," + quant + "," + valor);
 			bw.newLine();
 		} catch (IOException e) {
