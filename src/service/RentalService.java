@@ -46,7 +46,7 @@ public class RentalService {
 	public void processInvoice(CarRental carRental) {
 		long t1 = carRental.getStart().getTime();
 		long t2 = carRental.getFinish().getTime();
-		double hour = (t2 - t1) / 1000 / 60 / 60;
+		double hour = (double)(t2 - t1) / 1000 / 60 / 60;
 
 		double basicPayment;
 		if (hour <= 12) {
